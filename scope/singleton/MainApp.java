@@ -8,7 +8,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * Created By:Medini P.D
- * Date:- 12/06/2018
+ * Date:- 27/06/2018
  * Purpose: Programming example for singleton scope 
  */
 
