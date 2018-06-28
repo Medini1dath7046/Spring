@@ -5,7 +5,7 @@ package com.bridgelabz.aQualifier;
 
 /**
  * Created By:Medini P.D
- * Date:- 12/06/2018
+ * Date:- 27/06/2018
  * Purpose: Pojo class for the student
  */
 
