@@ -1,0 +1,151 @@
+<web-app
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>files</display-name>
+	
+	<welcome-file-list>
+  <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+	
+	
+	
+	<servlet>
+		<servlet-name>index.jsp</servlet-name>
+		<jsp-file>/index.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>index.jsp</servlet-name>
+		<url-pattern>/index</url-pattern>
+	</servlet-mapping>
+	<filter>
+		<description>
+		</description>
+		<display-name>Loginfilter</display-name>
+		<filter-name>Loginfilter</filter-name>
+		<filter-class>com.bridgelabz.RegistrationDetails.Loginfilter
+		</filter-class>
+	</filter>
+	<filter>
+		<description>
+		</description>
+		<display-name>LogoutFilter</display-name>
+		<filter-name>LogoutFilter</filter-name>
+		<filter-class>com.bridgelabz.RegistrationDetails.LogoutFilter
+		</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>Loginfilter</filter-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>LogoutFilter</filter-name>
+		<url-pattern>/RegisterController</url-pattern>
+	</filter-mapping>
+	<listener>
+		<listener-class>com.bridgelabz.RegistrationDetails.MySessionListener
+		</listener-class>
+	</listener>
+	<servlet>
+		<description />
+		<display-name>RegisterController</display-name>
+		<servlet-name>RegisterController</servlet-name>
+		<servlet-class>com.bridgelabz.RegistrationDetails.RegisterController
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterController</servlet-name>
+		<url-pattern>/RegisterController</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description />
+		<display-name>LoginServlet</display-name>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.bridgelabz.RegistrationDetails.LoginServlet
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description />
+		<display-name>PreLogin</display-name>
+		<servlet-name>PreLogin</servlet-name>
+		<servlet-class>com.bridgelabz.RegistrationDetails.PreLogin
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PreLogin</servlet-name>
+		<url-pattern>/PreLogin</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description />
+		<display-name>WelcomeServlet</display-name>
+		<servlet-name>WelcomeServlet</servlet-name>
+		<servlet-class>com.bridgelabz.RegistrationDetails.WelcomeServlet
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>WelcomeServlet</servlet-name>
+		<url-pattern>/WelcomeServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description />
+		<display-name>Logout</display-name>
+		<servlet-name>Logout</servlet-name>
+		<servlet-class>com.bridgelabz.RegistrationDetails.Logout
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Logout</servlet-name>
+		<url-pattern>/Logout</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description />
+		<display-name>Register</display-name>
+		<servlet-name>Register</servlet-name>
+		<servlet-class>com.bridgelabz.RegistrationDetails.Register
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Register</servlet-name>
+		<url-pattern>/Register</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description />
+		<display-name>OtpServlet</display-name>
+		<servlet-name>OtpServlet</servlet-name>
+		<servlet-class>com.bridgelabz.RegistrationDetails.OtpServlet
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>OtpServlet</servlet-name>
+		<url-pattern>/OtpServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description />
+		<display-name>ForgotPasswordServlet</display-name>
+		<servlet-name>ForgotPasswordServlet</servlet-name>
+		<servlet-class>com.bridgelabz.RegistrationDetails.ForgotPasswordServlet
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ForgotPasswordServlet</servlet-name>
+		<url-pattern>/ForgotPasswordServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description />
+		<display-name>MailApp</display-name>
+		<servlet-name>MailApp</servlet-name>
+		<servlet-class>com.bridgelabz.RegistrationDetails.MailApp
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MailApp</servlet-name>
+		<url-pattern>/MailApp</url-pattern>
+	</servlet-mapping>
+	<listener>
+		<listener-class>com.bridgelabz.RegistrationDetails.MySessionListener
+		</listener-class>
+	</listener>
+</web-app>
